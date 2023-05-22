@@ -1,0 +1,87 @@
+
+html {
+    background-image: url(imagenes/fondo2.jpg);
+    
+}
+
+
+.perfil {
+  border: solid;
+  border-color: rgb(0, 234, 255);
+  border-radius: 15%;
+  margin-top: 3rem;
+  margin-left: 20rem;
+  float: left;
+  display: inline;
+  vertical-align: middle;
+  /*background-color: rgba(158, 99, 36, 0.767);*/
+}
+
+h1 {
+  color: rgb(0, 234, 255);
+  font-size: 2.8rem;
+  text-align: center;
+  display: inline;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 4rem;
+  vertical-align: middle;
+  font-family: mainFont;
+  /*background-color: rgba(158, 99, 36, 0.767);*/
+
+  
+}
+
+h2 {
+  color:rgb(0, 234, 255);
+  font-size: 4rem;
+  margin: 1rem 3rem 3rem 26rem;
+  text-align: inline;
+  display: flexbox;
+  vertical-align: middle;
+  font-family: mainFont;
+  /*background-color: rgba(158, 99, 36, 0.767);*/
+  
+}
+
+
+
+
+p {
+  display: block;
+  color:rgb(0, 234, 255);
+  font-size: 2.5rem;
+  margin: 3rem 20rem 3rem 20rem;
+  padding-left: 20rem;
+  float:inline-end;
+  text-align:left;
+  font-family: mainFont;
+  font-weight: bold;
+  /*background-color: rgba(158, 99, 36, 0.767);*/
+  border-radius: 15%;
+}
+
+.current-page {
+  color:rgb(0, 234, 255);
+}
+
+
+a { 
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+  color:white;
+}
+
+a:hover {
+  color:rgb(0, 234, 255);
+  text-decoration: underline;
+}
+
+
+
+a:active{
+  color:red;
+}

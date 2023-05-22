@@ -1,0 +1,72 @@
+
+
+html {
+  background-image: url(../imagenes/fondo2.jpg);
+  
+}
+
+
+.current-page {
+  color:rgb(0, 234, 255);
+  text-decoration: none;
+}
+
+.volver {
+  text-align: left;
+}
+
+h1 {
+  color: rgb(0, 234, 255);
+  font-size: 2.8rem;
+  text-align: center;
+  display: inline;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 4rem;
+  vertical-align: middle;
+  font-family: mainFont;
+  /*background-color: rgba(158, 99, 36, 0.767);*/
+  text-decoration: none;
+  
+}
+
+
+h2 {
+  text-align: center;
+  color: rgb(0, 234, 255);
+  font-size: 3rem;
+  font-family: mainFont;
+  text-decoration: none;
+}
+
+p {
+    margin-left: 5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: mainFont;
+    text-decoration: none;
+}
+
+ul { 
+  color: rgb(0, 234, 255);
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  font-family: mainFont;
+  text-decoration: none;
+}
+
+a:hover {
+color:rgb(0, 234, 255);
+text-decoration: underline;
+}
+
+
+a:active{
+color:red;
+}
+
+a:visited {
+  color:white;
+  }
+  

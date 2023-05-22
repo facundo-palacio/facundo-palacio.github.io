@@ -1,0 +1,49 @@
+html {
+ background-color: black;
+}
+
+a { 
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+}
+
+a:hover {
+  color:green;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:green;
+}
+
+a:active{
+  color:red;
+}
+
+.chords {
+    color: blue;
+    font-size: large;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30rem;
+    line-height: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color:white;
+}
+
+p {
+    font-size: large;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2rem;
+    margin-left: 30rem;
+    color:white;
+
+
+}
