@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-size: 1365px 1500px;
+  /*background-size: 1365px 1500px;*/
   color: #eee;
   margin: 0;
   padding: 0;
@@ -129,18 +129,115 @@ a:active {
   text-align: left;
 }
 
+iframe {
+  max-width: 100%; /* Asegura que no se salgan del contenedor */
+  height: auto;    /* Mantiene la proporción */
+  aspect-ratio: 16 / 9; /* Establece una proporción de aspecto para videos (16:9 es común) */
+}
 
-
+/*
+.container {
+  display: flex;
+  align-items: center; 
+  gap: 20px; /
+}
+*/
 
 .container {
   display: flex;
-  align-items: center; /* vertically center */
-  gap: 20px; /* space between image and text */
+  flex-direction: row; /* Por defecto, los elementos estarán en fila */
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no hay espacio */
+  justify-content: center; /* Centra los elementos cuando se envuelven */
 }
+
 img {
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
 }
 .text {
   flex: 1; /* take remaining space */
+}
+
+
+/* --- Media Queries --- */
+
+/* Para pantallas más pequeñas que 768px (tablets en modo retrato y móviles) */
+@media (max-width: 768px) {
+  /* Navegación: Cambia el layout a un menú de hamburguesa o apila los elementos */
+  nav ul {
+    flex-direction: column; /* Apila los elementos de la lista verticalmente */
+    font-size: 200%; /* Reduce el tamaño de fuente */
+  }
+
+  nav ul li {
+    margin: 0.5rem 0; /* Espacio vertical entre los elementos */
+  }
+
+  /* Títulos y texto: Ajusta el tamaño de fuente para mejor legibilidad */
+  h1 {
+    font-size: 250%; /* Reduce el tamaño del título principal */
+  }
+
+  h2 {
+    font-size: 180%; /* Reduce el tamaño de los subtítulos */
+  }
+
+  p {
+    font-size: 100%; /* Ajusta el tamaño del párrafo */
+  }
+
+  section {
+    padding: 1rem; /* Reduce el padding de las secciones */
+    font-size: 120%;
+  }
+
+  /* Contenedores de imagen y texto: Apílalos */
+  .container {
+    flex-direction: column; /* Apila la imagen y el texto uno debajo del otro */
+    text-align: center; /* Centra el texto en el modo apilado */
+  }
+
+  .container img {
+    max-width: 80%; /* Reduce el tamaño máximo de la imagen */
+  }
+
+  .text {
+    width: 90%; /* Asegura que el texto ocupe casi todo el ancho disponible */
+    margin: 1rem auto; /* Centra el bloque de texto */
+  }
+
+  /* Iframes de YouTube: Asegura que se ajusten bien */
+  iframe {
+    width: 95%; /* Ocupa casi todo el ancho disponible */
+    height: auto; /* Mantiene la proporción */
+  }
+
+  /* Formulario de contacto: Asegura que los inputs se vean bien */
+  #contacto form input,
+  #contacto form textarea,
+  #contacto form button {
+    width: 90%; /* Ancho completo para los campos del formulario */
+    margin-bottom: 10px; /* Espacio entre los campos */
+  }
+}
+
+/* Para pantallas aún más pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  nav ul {
+    font-size: 150%;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  section {
+    padding: 0.5rem;
+  }
 }
